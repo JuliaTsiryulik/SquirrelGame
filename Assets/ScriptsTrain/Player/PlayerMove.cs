@@ -1,8 +1,9 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-
     public float moveSpeed = 5;
     public float leftRightSpeed = 5;
 
@@ -16,79 +17,92 @@ public class PlayerMove : MonoBehaviour
 
     //public AudioSource catDeath;
 
+
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+        Scene currentScene = SceneManager.GetActiveScene();
 
-        if (canMove == true)
+        string sceneName = currentScene.name;
+
+        if (sceneName == "MainMenu")
         {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            charModel.GetComponent<Animator>().Play("Happy");
+        }
+        else if (sceneName == "SampleScene")
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+
+            if (canMove == true)
             {
-                if (this.gameObject.transform.position.x > LevelBoundary.leftSide)
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
-                }
-            }
-
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                if (this.gameObject.transform.position.x < LevelBoundary.rightSide)
-                {
-                    transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed * -1);
-                }
-            }
-
-            if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow))
-            {
-                isSpaced = true;
-
-                if (Mathf.Abs(power) < 0.01f && this.gameObject.transform.position.y <= 0)
-                {
-                    power = 5;
-
-                    Character.isJumped = true;
-
+                    if (this.gameObject.transform.position.x > LevelBoundary.leftSide)
+                    {
+                        transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
+                    }
                 }
 
-                /*if (this.gameObject.transform.position.y <= 0)
+                if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
-                   // transform.Translate(Vector3.up * Time.deltaTime * jumpAmount);
-                }*/
-            }
+                    if (this.gameObject.transform.position.x < LevelBoundary.rightSide)
+                    {
+                        transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed * -1);
+                    }
+                }
 
-            if (this.gameObject.transform.position.y > 0)
+                if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow))
+                {
+                    isSpaced = true;
+
+                    if (Mathf.Abs(power) < 0.01f && this.gameObject.transform.position.y <= 0)
+                    {
+                        power = 5;
+
+                        Character.isJumped = true;
+
+                    }
+
+                    /*if (this.gameObject.transform.position.y <= 0)
+                    {
+                       // transform.Translate(Vector3.up * Time.deltaTime * jumpAmount);
+                    }*/
+                }
+
+                if (this.gameObject.transform.position.y > 0)
+                {
+
+                    power -= 15f * Time.deltaTime;
+                }
+
+                if (this.gameObject.transform.position.y < 0)
+                {
+                    var pos = this.gameObject.transform.position;
+                    pos.y = 0;
+                    this.gameObject.transform.position = pos;
+                    power = 0;
+
+                    isSpaced = false;
+                }
+
+                if (Mathf.Abs(power) > 0.01f)
+                {
+                    transform.Translate(Vector3.up * Time.deltaTime * power);
+                }
+
+            }
+            /*else
             {
-                
-                power -= 15f * Time.deltaTime;
-            }
-
-            if (this.gameObject.transform.position.y < 0)
+                catDeath.Play();
+            }*/
+            if (isSpaced == true)
             {
-                var pos = this.gameObject.transform.position;
-                pos.y = 0;
-                this.gameObject.transform.position = pos;
-                power = 0;
-
-                isSpaced = false;
+                charModel.GetComponent<Animator>().Play("Jump");
             }
-
-            if (Mathf.Abs(power) > 0.01f)
+            else
             {
-                transform.Translate(Vector3.up * Time.deltaTime * power);
+                charModel.GetComponent<Animator>().Play("runLoop");
             }
-            
         }
-        /*else
-        {
-            catDeath.Play();
-        }*/
-        if (isSpaced == true)
-        {
-            charModel.GetComponent<Animator>().Play("Jump");
-        }
-        else
-        {
-            charModel.GetComponent<Animator>().Play("runLoop");
-        }
+        
     }
 }
