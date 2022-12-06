@@ -130,6 +130,13 @@
     <Compile Include="Assets\Scripts\UI\Shop\ShopItemList.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\IAPHandler.cs" />
     <Compile Include="Assets\Scripts\UI\Settings\SettingPopup.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\ResumeScene.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\PauseRunSequence.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\QuitScene.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\ExitFromGame.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\MenuStart.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\PlayGame.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\LoadingNextScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
