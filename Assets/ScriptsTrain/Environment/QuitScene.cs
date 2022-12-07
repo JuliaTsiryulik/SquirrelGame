@@ -7,6 +7,7 @@ public class QuitScene : MonoBehaviour
 {
     public GameObject leaveScreen;
     public GameObject pauseScreen;
+    //public GameObject playerModel;
 
     //public string _mainMenu;
 
@@ -25,5 +26,6 @@ public class QuitScene : MonoBehaviour
     public void Quit()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Time.timeScale = 1;
     }
 }

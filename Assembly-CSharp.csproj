@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Consumable\Types\Invincibility.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\LevelStart.cs" />
     <Compile Include="Assets\Scripts\Obstacles\Obstacle.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\LoadingNextScene.cs" />
     <Compile Include="Assets\ScriptsTrain\Collectables\LevelDistance.cs" />
     <Compile Include="Assets\Scripts\UI\LicenceDisplayer.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\ShopItemListItem.cs" />
@@ -100,12 +101,16 @@
     <Compile Include="Assets\Scripts\Consumable\Types\CoinMagnet.cs" />
     <Compile Include="Assets\Scripts\Sounds\CountdownSound.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\QuitScene.cs" />
     <Compile Include="Assets\Scripts\UI\PowerupIcon.cs" />
     <Compile Include="Assets\Scripts\CoroutineHandler.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\ExitFromGame.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\ResumeScene.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\ShopList.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\ObstacleFalling.cs" />
     <Compile Include="Assets\Scripts\Obstacles\Missile.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\MenuStart.cs" />
     <Compile Include="Assets\ScriptsTrain\Collectables\CollectableControll.cs" />
     <Compile Include="Assets\Scripts\Helpers.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\ObstacleCollision.cs" />
@@ -130,13 +135,7 @@
     <Compile Include="Assets\Scripts\UI\Shop\ShopItemList.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\IAPHandler.cs" />
     <Compile Include="Assets\Scripts\UI\Settings\SettingPopup.cs" />
-    <Compile Include="Assets\ScriptsTrain\Environment\ResumeScene.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\PauseRunSequence.cs" />
-    <Compile Include="Assets\ScriptsTrain\Environment\QuitScene.cs" />
-    <Compile Include="Assets\ScriptsTrain\Menu\ExitFromGame.cs" />
-    <Compile Include="Assets\ScriptsTrain\Menu\MenuStart.cs" />
-    <Compile Include="Assets\ScriptsTrain\Menu\PlayGame.cs" />
-    <Compile Include="Assets\ScriptsTrain\Menu\LoadingNextScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
