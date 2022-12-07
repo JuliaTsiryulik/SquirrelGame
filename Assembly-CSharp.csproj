@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
     <Compile Include="Assets\Scripts\Sounds\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\WorldCurver.cs" />
+    <Compile Include="Assets\ScriptsTrain\Menu\ChangeSceneButton.cs" />
     <Compile Include="Assets\Scripts\Consumable\ConsumableDatabase.cs" />
     <Compile Include="Assets\ScriptsTrain\Player\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Missions\Missions.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\Scripts\UI\LicenceDisplayer.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\ShopItemListItem.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\LevelBoundary.cs" />
+    <Compile Include="Assets\ScriptsTrain\Loading\LoadToGame.cs" />
     <Compile Include="Assets\Scripts\Characters\CharacterDatabase.cs" />
     <Compile Include="Assets\Scripts\Themes\ThemeData.cs" />
     <Compile Include="Assets\Scripts\OpenURL.cs" />
