@@ -1,7 +1,6 @@
-# Squirrel Game
+# Cat Game
 
-Главный персонаж белка бегает по тропе и собирает орехи, на пути встречаются
-различные препятствия - палки, камни, ветки деревьев, которые надо перепрыгивать. При этом
-постепенно скорость белки увеличивается.
+Главный персонаж кот бегает по городской дороге и собирает звездочки, на пути встречаются
+различные препятствия - стены, люки, ограждения, которые надо перепрыгивать. 
 
-[Squirrel Game GDD](https://docs.google.com/document/d/11JVrGg_xTzeVUvDE1rT7UUIKzsQ7ykkK2r0QHNvOL64/edit#heading=h.mkb8dirg5ncy)
+[Cat Game GDD](https://docs.google.com/document/d/11JVrGg_xTzeVUvDE1rT7UUIKzsQ7ykkK2r0QHNvOL64/edit#heading=h.mkb8dirg5ncy)
