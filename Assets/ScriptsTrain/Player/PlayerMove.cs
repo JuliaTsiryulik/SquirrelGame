@@ -4,8 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float moveSpeed = 5;
-    public float leftRightSpeed = 5;
+    public static float currentSpeed;
+    public float maxSpeed = 20f;
+    public float minSpeed = 5f;
+
+    public float leftRightSpeed = 5f;
 
     public GameObject charModel;
 
@@ -16,6 +19,11 @@ public class PlayerMove : MonoBehaviour
     static public bool isSpaced = false;
 
     //public AudioSource catDeath;
+
+    void Start()
+    {
+        currentSpeed = minSpeed;
+    }
 
 
     void Update()
@@ -30,7 +38,12 @@ public class PlayerMove : MonoBehaviour
         }
         else if (sceneName == "SampleScene")
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+            transform.Translate(Vector3.forward * Time.deltaTime * currentSpeed, Space.World);
+
+            if (currentSpeed < maxSpeed)
+            {
+                currentSpeed += 0.1f * Time.deltaTime;
+            }
 
             if (canMove == true)
             {

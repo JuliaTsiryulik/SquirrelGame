@@ -67,6 +67,7 @@
     <Compile Include="Assets\ScriptsTrain\Environment\LevelBoundary.cs" />
     <Compile Include="Assets\ScriptsTrain\Loading\LoadToGame.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\QuitScene.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\WorldCurver.cs" />
     <Compile Include="Assets\ScriptsTrain\Menu\ExitFromGame.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\ResumeScene.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\ObstacleFalling.cs" />

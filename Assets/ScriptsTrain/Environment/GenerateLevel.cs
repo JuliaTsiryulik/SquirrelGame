@@ -8,15 +8,19 @@ public class GenerateLevel : MonoBehaviour
     public int zPos = 125;
     public bool creatingSection = false;
     public int secNum;
+    public float timeWaiting = 25f;
 
     public GameObject sky;
 
     public List<GameObject> InstancedObjects = new List<GameObject>();
 
+    
+
     void Update()
     {
         if (creatingSection == false)
         {
+            timeWaiting = 125 / PlayerMove.currentSpeed;
             creatingSection = true;
             StartCoroutine(GenerateSection());
         }
@@ -36,8 +40,13 @@ public class GenerateLevel : MonoBehaviour
 
         sky.transform.position = new Vector3(0, 0, zPos);
 
+        //timeWaiting = (5f - 0.1f * Time.deltaTime) * (5f - 0.1f * Time.deltaTime);
+
         zPos += 125;
-        yield return new WaitForSeconds(25);
+
+        yield return new WaitForSeconds(timeWaiting);
+        /*timeWaiting -= 5 * 0.1f * Time.deltaTime;
+        yield return new WaitForSeconds(timeWaiting);*/
         creatingSection = false;
     }
 }
