@@ -13,7 +13,6 @@ public class GenerateLevel : MonoBehaviour
     public GameObject sky;
 
     public List<GameObject> InstancedObjects = new List<GameObject>();
-
     
 
     void Update()
@@ -40,13 +39,9 @@ public class GenerateLevel : MonoBehaviour
 
         sky.transform.position = new Vector3(0, 0, zPos);
 
-        //timeWaiting = (5f - 0.1f * Time.deltaTime) * (5f - 0.1f * Time.deltaTime);
-
         zPos += 125;
 
         yield return new WaitForSeconds(timeWaiting);
-        /*timeWaiting -= 5 * 0.1f * Time.deltaTime;
-        yield return new WaitForSeconds(timeWaiting);*/
         creatingSection = false;
     }
 }

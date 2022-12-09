@@ -72,6 +72,7 @@
     <Compile Include="Assets\ScriptsTrain\Environment\ResumeScene.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\ObstacleFalling.cs" />
     <Compile Include="Assets\ScriptsTrain\Menu\MenuStart.cs" />
+    <Compile Include="Assets\ScriptsTrain\Environment\HeartsCounter.cs" />
     <Compile Include="Assets\ScriptsTrain\Collectables\CollectableControll.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\ObstacleCollision.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\GenerateObstacle.cs" />
