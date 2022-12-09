@@ -8,7 +8,7 @@ public class LevelDistance : MonoBehaviour
 {
     public GameObject disDisplay;
     public GameObject disEndDisplay;
-    public int disRun;
+    public int disRun = 0;
     public bool addingDis = false;
     public float disDelay = 0.25f;
 

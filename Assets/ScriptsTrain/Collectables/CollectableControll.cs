@@ -10,6 +10,10 @@ public class CollectableControll : MonoBehaviour
     public GameObject starCountDisplay;
     public GameObject starEndDisplay;
 
+    void Start()
+    {
+        CollectableControll.starCount = 0;
+    }
     void Update()
     {
         starCountDisplay.GetComponent<TextMeshProUGUI>().text = "" + starCount;
