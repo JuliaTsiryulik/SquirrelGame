@@ -2165,6 +2165,9 @@ MonoBehaviour:
   levelControl: {fileID: 924487898}
   health: 3
   heart: 0
+  thePlayer: {fileID: 1735285405}
+  charModel: {fileID: 99074759}
+  levelConrol: {fileID: 924487898}
 --- !u!1 &79052897 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 73874cb76131d954bbdbec46f14b6cb3,
@@ -13510,7 +13513,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &680424699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14009,7 +14011,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &696897024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14109,7 +14110,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &698375681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15410,7 +15410,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!114 &725163144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15428,7 +15427,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &725163145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15688,7 +15686,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &741357919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16379,7 +16376,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &764683151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20001,6 +19997,9 @@ MonoBehaviour:
   levelControl: {fileID: 924487898}
   health: 0
   heart: 0
+  thePlayer: {fileID: 0}
+  charModel: {fileID: 0}
+  levelConrol: {fileID: 0}
 --- !u!1001 &930826297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21779,7 +21778,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1011818460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25474,7 +25472,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1231608014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27204,7 +27201,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1298593313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28840,7 +28836,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1387877034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29545,7 +29540,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1406992515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33030,7 +33024,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1598205399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33601,7 +33594,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1636549043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33891,7 +33883,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &1654218735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36217,7 +36208,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!1001 &1746547759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41669,7 +41659,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &2049773168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42966,7 +42955,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &2085529290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43268,7 +43256,6 @@ MonoBehaviour:
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
   crashThud: {fileID: 732362749}
-  loseLife: {fileID: 0}
 --- !u!65 &2096185448
 BoxCollider:
   m_ObjectHideFlags: 0

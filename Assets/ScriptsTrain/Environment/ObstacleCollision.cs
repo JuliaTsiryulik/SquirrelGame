@@ -11,30 +11,27 @@ public class ObstacleCollision : MonoBehaviour
 
     public AudioSource crashThud;
 
-    public HeartsCounter loseLife;
     static public bool isObstacle = false;
 
     void OnTriggerEnter(Collider other)
     {
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        thePlayer.GetComponent<PlayerMove>().enabled = false;
-
-        //charModel.GetComponent<Character>().enabled = false;
 
         charModel.GetComponent<Animator>().Play("Hit");
 
         levelConrol.GetComponent<LevelDistance>().enabled = false;
+        thePlayer.GetComponent<PlayerMove>().enabled = false;
 
         crashThud.Play();
 
-        //Character.isDead = true;
         isObstacle = true;
 
-        mainCam.GetComponent<Animator>().enabled = true;
+        mainCam.GetComponent<Animator>().enabled = true;        
 
-        //loseLife.LosingLife();
-        //???????????levelConrol.GetComponent<HeartsCounter>().enabled = true;
+        var searchHeartsContainer = GameObject.Find("Hearts");
 
-        //levelConrol.GetComponent<EndRunSequence>().enabled = true;
+        searchHeartsContainer.GetComponent<HeartsCounter>().LosingLife();
+
+        this.gameObject.SetActive(false);
     }
 }
