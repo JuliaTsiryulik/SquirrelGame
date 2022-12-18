@@ -12,6 +12,8 @@ public class RetryScene : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
+        Time.timeScale = 1;
+
         charModel.GetComponent<Animator>().Play("Entry");
     }
 }

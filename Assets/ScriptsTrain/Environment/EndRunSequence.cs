@@ -21,7 +21,8 @@ public class EndRunSequence : MonoBehaviour
         liveDis.SetActive(false);
         endScreen.SetActive(true);
 
-        yield return new WaitForSeconds(3);
-        fadeOut.SetActive(true);
+        Time.timeScale = 0f;
+        //yield return new WaitForSeconds(3);
+        //fadeOut.SetActive(true);
     }
 }

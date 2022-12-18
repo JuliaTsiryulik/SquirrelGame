@@ -5,41 +5,55 @@ using UnityEngine;
 public class GenerateObstacle : MonoBehaviour
 {
     public GameObject[] section;
-    public int zPos;
+    public int zPosStart = 10;
+
+    public int zPosDifference = 20;
+    public int zPosEnd;
+
     public bool creatingSection = false;
     public int secNum;
+    public float timeWaiting;
 
-    //public GameObject sky;
+    public Camera mainCam;
 
     public List<GameObject> InstancedObjects = new List<GameObject>();
 
-    void Update()
+    void Start()
     {
-        if (creatingSection == false)
-        {
-            creatingSection = true;
-            StartCoroutine(GenerateSection());
-        }
+        zPosEnd = zPosDifference;
+        timeWaiting = zPosDifference;
+        StartCoroutine(GenerateSection());
     }
+
 
     IEnumerator GenerateSection()
     {
-        yield return new WaitForSeconds(2);
-        secNum = Random.Range(0, 16);
-        zPos = Random.Range(1, 125);
-        var newInstance = Instantiate(section[secNum], new Vector3(0, 0, zPos), Quaternion.identity);
-        InstancedObjects.Add(newInstance);
-
-        if (InstancedObjects.Count > 16)
+        while (true)
         {
-            Destroy(InstancedObjects[0]);
-            InstancedObjects.RemoveAt(0);
+            yield return new WaitForSeconds(0.1f);
+
+            secNum = Random.Range(0, 16);
+
+            var posZ = mainCam.transform.position.z;
+
+            var last = InstancedObjects.Count == 0
+                ? null
+                : InstancedObjects[InstancedObjects.Count - 1];
+
+            if (last == null || last.transform.position.z + 10 < posZ)
+            {
+                var newInstance = Instantiate(section[secNum], new Vector3(0, 0, posZ + 10), Quaternion.identity);
+
+                InstancedObjects.Add(newInstance);
+
+                if (InstancedObjects.Count > 16)
+                {
+                    Destroy(InstancedObjects[0]);
+                    InstancedObjects.RemoveAt(0);
+                }
+            }
         }
 
-        //sky.transform.position = new Vector3(0, 0, zPos);
-
-        //zPos += 20;
-        //yield return new WaitForSeconds(45);
-        creatingSection = false;
     }
+
 }
