@@ -7,18 +7,14 @@ public class PlayerMove : MonoBehaviour
     public static float currentSpeed;
     public float maxSpeed = 20f;
     public float minSpeed = 5f;
-
     public float leftRightSpeed = 5f;
-
     public GameObject charModel;
 
-    //private float jumpAmount = 4f;
     private float power;
 
     static public bool canMove = false;
     static public bool isSpaced = false;
 
-    //public AudioSource catDeath;
 
     void Start()
     {
@@ -75,10 +71,6 @@ public class PlayerMove : MonoBehaviour
 
                     }
 
-                    /*if (this.gameObject.transform.position.y <= 0)
-                    {
-                       // transform.Translate(Vector3.up * Time.deltaTime * jumpAmount);
-                    }*/
                 }
 
                 if (this.gameObject.transform.position.y > 0)
@@ -103,10 +95,7 @@ public class PlayerMove : MonoBehaviour
                 }
 
             }
-            /*else
-            {
-                catDeath.Play();
-            }*/
+
             if (isSpaced == true)
             {
                 charModel.GetComponent<Animator>().Play("Jump");

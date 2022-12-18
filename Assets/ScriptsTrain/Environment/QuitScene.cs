@@ -13,16 +13,17 @@ public class QuitScene : MonoBehaviour
     public GameObject loadingScreen;
     public GameObject catModel;
     public GameObject decorations;
-    public GameObject sky;
     public GameObject bgm;
-    public GameObject canvas;
     public GameObject light;
     public GameObject footPath;
+    public GameObject hearts;
+    public GameObject pauseButton;
+    public GameObject starDisplay;
+    public GameObject distanceDisplay;
+    public GameObject x2Picture;
 
     public Slider slider;
-    //public GameObject playerModel;
-
-    //public string _mainMenu;
+    public Camera mainCam;
 
     public void QuitInvoke()
     {
@@ -39,8 +40,6 @@ public class QuitScene : MonoBehaviour
     public void Quit()
     {
         StartCoroutine(LoadSceneAsync());
-
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         Time.timeScale = 1;
     }
 
@@ -52,11 +51,14 @@ public class QuitScene : MonoBehaviour
 
         catModel.SetActive(false);
         decorations.SetActive(false);
-        sky.SetActive(false);
         bgm.SetActive(false);
-        canvas.SetActive(false);
         light.SetActive(false);
         footPath.SetActive(false);
+        hearts.SetActive(false);
+        pauseButton.SetActive(false);
+        starDisplay.SetActive(false);
+        distanceDisplay.SetActive(false);
+        x2Picture.SetActive(false);
 
         
 

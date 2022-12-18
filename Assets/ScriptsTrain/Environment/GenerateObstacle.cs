@@ -31,7 +31,6 @@ public class GenerateObstacle : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.1f);
-
             secNum = Random.Range(0, 16);
 
             var posZ = mainCam.transform.position.z;
@@ -43,7 +42,6 @@ public class GenerateObstacle : MonoBehaviour
             if (last == null || last.transform.position.z + 10 < posZ)
             {
                 var newInstance = Instantiate(section[secNum], new Vector3(0, 0, posZ + 10), Quaternion.identity);
-
                 InstancedObjects.Add(newInstance);
 
                 if (InstancedObjects.Count > 16)

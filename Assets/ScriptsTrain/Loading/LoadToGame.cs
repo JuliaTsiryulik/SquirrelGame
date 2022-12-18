@@ -10,7 +10,6 @@ public class LoadToGame : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
-        //string sceneName = currentScene.name;
         int sceneIndex = currentScene.buildIndex;
 
         if (sceneIndex == 0)
