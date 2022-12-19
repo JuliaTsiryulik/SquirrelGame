@@ -11,9 +11,7 @@ public class LevelStart : MonoBehaviour
 
     void Start()
     {
-        //Time.timeScale = 0f;
         StartCoroutine(CountSequence());
-        //Time.timeScale = 1;
     }
 
     IEnumerator CountSequence()
@@ -24,6 +22,5 @@ public class LevelStart : MonoBehaviour
         startFX.Play();
 
         PlayerMove.canMove = true;
-        //Character.isDead = true;
     }
 }

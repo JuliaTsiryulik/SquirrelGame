@@ -18,12 +18,9 @@ public class ObstacleFalling : MonoBehaviour
 
         levelConrol.GetComponent<LevelDistance>().enabled = false;
 
-        //crashThud.Play();
-
         Character.isFell = true;
 
         mainCam.GetComponent<Animator>().enabled = true;
-        //mainCam.GetComponent<Animator>().Play("CamUpShake");
 
         levelConrol.GetComponent<EndRunSequence>().enabled = true;
     }

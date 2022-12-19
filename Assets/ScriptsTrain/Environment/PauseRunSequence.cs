@@ -8,12 +8,8 @@ public class PauseRunSequence : MonoBehaviour
 {
     public GameObject pauseScreen;
 
-    //public GameObject fadeOut;
-
     public void PauseInvoke()
     {
-        //pauseScreen.SetActive(true);
-
         StartCoroutine(PauseSequence());
         Time.timeScale = 0f;
     }
