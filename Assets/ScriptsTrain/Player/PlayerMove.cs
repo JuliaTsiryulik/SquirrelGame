@@ -85,8 +85,6 @@ public class PlayerMove : MonoBehaviour
                     pos.y = 0;
                     this.gameObject.transform.position = pos;
                     power = 0;
-
-                   // isSpaced = false;
                 }
 
                 if (this.gameObject.transform.position.y <= 0)
