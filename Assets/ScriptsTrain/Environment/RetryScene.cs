@@ -13,6 +13,9 @@ public class RetryScene : MonoBehaviour
 
         Time.timeScale = 1;
 
+        Character.isJumped = false;
+
         charModel.GetComponent<Animator>().Play("Entry");
     }
+
 }

@@ -86,10 +86,15 @@ public class PlayerMove : MonoBehaviour
                     this.gameObject.transform.position = pos;
                     power = 0;
 
+                   // isSpaced = false;
+                }
+
+                if (this.gameObject.transform.position.y <= 0)
+                {
                     isSpaced = false;
                 }
 
-                if (Mathf.Abs(power) > 0.01f)
+                    if (Mathf.Abs(power) > 0.01f)
                 {
                     transform.Translate(Vector3.up * Time.deltaTime * power);
                 }
@@ -102,7 +107,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                charModel.GetComponent<Animator>().Play("runLoop");
+                charModel.GetComponent<Animator>().Play("runStart");
             }
         }
         

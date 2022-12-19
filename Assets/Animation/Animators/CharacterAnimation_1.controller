@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CharacterAnimation
+  m_Name: CharacterAnimation_1
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: RandomIdle
@@ -319,8 +319,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: 110170416}
   - {fileID: 1101000011821406204}
-  m_StateMachineBehaviours:
-  - {fileID: 11460824}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -922,8 +921,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: 1101392079541855154}
   - {fileID: 1101666616372957830}
-  m_StateMachineBehaviours:
-  - {fileID: 114643710760696524}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
