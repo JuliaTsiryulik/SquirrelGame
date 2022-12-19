@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets\ScriptsTrain\Collectables\CollectStar.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\GenerateLevel.cs" />
-    <Compile Include="Assets\ScriptsTrain\Menu\ChangeSceneButton.cs" />
     <Compile Include="Assets\ScriptsTrain\Player\PlayerMove.cs" />
     <Compile Include="Assets\ScriptsTrain\Collectables\RotateObject.cs" />
     <Compile Include="Assets\ScriptsTrain\Environment\LevelStart.cs" />
