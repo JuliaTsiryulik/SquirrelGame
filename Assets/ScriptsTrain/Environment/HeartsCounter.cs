@@ -17,6 +17,11 @@ public class HeartsCounter : MonoBehaviour
 
     public void LosingLife()
     {
+        if (heart < 0)
+        {
+            return;
+        }
+
         currentHeart = lifeHearts[heart];
         currentHeart.GetComponent<Animator>().Play("Hearts");
         heart += 1;

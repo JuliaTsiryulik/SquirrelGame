@@ -7,7 +7,6 @@ public class EndRunSequence : MonoBehaviour
     public GameObject liveStars;
     public GameObject liveDis;
     public GameObject endScreen;
-    public GameObject fadeOut;
 
     void Start()
     {
@@ -22,7 +21,5 @@ public class EndRunSequence : MonoBehaviour
         endScreen.SetActive(true);
 
         Time.timeScale = 0f;
-        //yield return new WaitForSeconds(3);
-        //fadeOut.SetActive(true);
     }
 }

@@ -28840,7 +28840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dd420cd62014e345bf81251fe6e2a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thePlayer: {fileID: 99074759}
+  thePlayer: {fileID: 1735285405}
   charModel: {fileID: 99074759}
   mainCam: {fileID: 963194225}
   levelConrol: {fileID: 924487898}
@@ -36712,19 +36712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starFX: {fileID: 319556761}
---- !u!114 &1770538636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770538631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b5127ab76c9fd44a8703c52cb80d2ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starFX: {fileID: 0}
 --- !u!136 &1770538637
 CapsuleCollider:
   m_ObjectHideFlags: 0
